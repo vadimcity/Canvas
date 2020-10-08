@@ -25,24 +25,24 @@ class Ball {
     {
       // Escaping to the left, start moving right.
       velocity.x = -1*velocity.x;
-      //blop.play();
+      blop.play();
     } else if (position.x + radius > width && velocity.x > 0)
     {
       // Escaping to the right, start moving left.
       velocity.x = -1*velocity.x;
-      //blop.play();
+      blop.play();
     }
 
     if (position.y - radius < 0 && velocity.y < 0)
     {
       // Escaping upwards, start moving down.
       velocity.y = -1*velocity.y;
-      //blop.play();
+      blop.play();
     } else if (position.y + radius > height && velocity.y > 0)
     {
       // Escaping downwards, start moving up.
       velocity.y = -1*velocity.y;      
-      //blop.play();
+      blop.play();
     }
   }
 }
